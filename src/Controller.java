@@ -19,12 +19,9 @@ public class Controller {
 	@FXML
 	private ListView<String> resultView;
 	
-	String[] things = {"yada", "deck", "mary"};
-	
-	TextAnalyzer obj = new TextAnalyzer();
-	
 	public void handleAnalyzeClick() throws IOException 
 	{
+		TextAnalyzer obj = new TextAnalyzer();
 		resultView.getItems().addAll(obj.getList());
 	}
 
